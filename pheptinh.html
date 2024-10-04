@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Phép Tính Cơ Bản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="exercise-container">
+        
+        <div class="calc-operations">
+            <p>Thực hiện phép tính </p>
+            <input type="number" id="num1" placeholder="Nhập số">
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" id="num2" placeholder="Nhập số">
+            <button onclick="calculate()">=</button>
+            <p>Kết quả: <span id="result"></span></p>
+        </div>
+    </div>
+
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var operator = document.getElementById('operator').value;
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result;
+
+            if (operator == '+') result = num1 + num2;
+            if (operator == '-') result = num1 - num2;
+            if (operator == '*') result = num1 * num2;
+            if (operator == '/') result = num1 / num2;
+
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>

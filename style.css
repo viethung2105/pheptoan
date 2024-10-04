@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+}
+.exercise-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+.calc-operations {
+    text-align: center;
+}
+.calc-operations input, .calc-operations select {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+.calc-operations button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: pink;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.calc-operations button:hover {
+    background-color: pink;
+}
